@@ -21,7 +21,13 @@ public class Book {
 
     public Book(String title, String author){
         this.title = title;
-        this.author = title;
+        this.author = author;
+
+
+    }
+
+    public long getId(){
+        return id;
     }
 
     public String getTitle() {

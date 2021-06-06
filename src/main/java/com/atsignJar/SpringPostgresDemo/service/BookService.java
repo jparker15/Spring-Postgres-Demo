@@ -17,8 +17,8 @@ public class BookService {
     }
 
     public void deleteBook(int id){
+//        System.out.println("Successfully deleted" + repository.findById(id));
         repository.deleteById(id);
-        System.out.println("Successfully deleted" + repository.findById(id));
     }
 
     public void updateBook(String title,String author,int id){

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class BookController {
@@ -26,6 +27,12 @@ public class BookController {
        return bookService.addBook(book);
     }
 
+    @GetMapping("/{id}")
+    public Optional<Book> getBookById(@PathVariable int id){
+        return bookService.findByID(id);
+    }
+
     @DeleteMapping("/delete/{id}")
-    public void delete(@PathVariable(value = "id")){bookService.deleteBook(id);}
+    public void delete(@PathVariable int id){ bookService.deleteBook(id);}
+
 }

@@ -4,8 +4,10 @@ import com.atsignJar.SpringPostgresDemo.entity.Book;
 import com.atsignJar.SpringPostgresDemo.repository.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BookService {
@@ -16,8 +18,8 @@ public class BookService {
         return repository.save(book);
     }
 
-    public void deleteBook(int id){
-//        System.out.println("Successfully deleted" + repository.findById(id));
+    public void deleteBook(@PathVariable int id){
+        System.out.println("Successfully deleted" + repository.findById(id));
         repository.deleteById(id);
     }
 
@@ -31,6 +33,8 @@ public class BookService {
     public List<Book> findAll(){
        return repository.findAll();
     }
+
+    public Optional<Book> findByID(@PathVariable int id){return repository.findById(id); }
 
 
 }

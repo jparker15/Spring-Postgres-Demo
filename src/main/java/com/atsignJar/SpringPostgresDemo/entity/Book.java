@@ -1,9 +1,6 @@
 package com.atsignJar.SpringPostgresDemo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "library")
@@ -30,6 +27,8 @@ public class Book {
         return id;
     }
 
+    public void setId(int id) {this.id = id; }
+
     public String getTitle() {
         return title;
     }
@@ -45,4 +44,6 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+
 }

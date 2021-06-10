@@ -27,6 +27,9 @@ public class BookController {
        return bookService.addBook(book);
     }
 
+    @PutMapping("/update/{id}")
+    public Book update(@Var){return bookService.updateBook();}
+
     @GetMapping("/{id}")
     public Optional<Book> getBookById(@PathVariable int id){
         return bookService.findByID(id);

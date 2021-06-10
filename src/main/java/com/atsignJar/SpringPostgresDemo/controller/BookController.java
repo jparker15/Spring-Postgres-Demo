@@ -28,7 +28,7 @@ public class BookController {
     }
 
     @PutMapping("/update/{id}")
-    public Book update(@Var){return bookService.updateBook();}
+    public Book update(@RequestBody Book book){return bookService.updateBook();}
 
     @GetMapping("/{id}")
     public Optional<Book> getBookById(@PathVariable int id){

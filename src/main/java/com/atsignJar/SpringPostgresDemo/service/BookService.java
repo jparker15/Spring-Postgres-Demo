@@ -18,7 +18,7 @@ public class BookService {
         return repository.save(book);
     }
 
-    public void deleteBook(@PathVariable int id){
+    public void deleteBook(Integer id){
         System.out.println("Successfully deleted" + repository.findById(id));
         repository.deleteById(id);
     }

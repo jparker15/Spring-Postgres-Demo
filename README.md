@@ -6,3 +6,8 @@ A postgres data base of all the books I own. Prevents buying duplicates instead 
 
 ** frontend 
 
+Delete still doesn't work idk why I can't delete things by ID but can find them by that same ID 
+
+
+
+

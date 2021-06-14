@@ -8,4 +8,4 @@ A postgres data base of all the books I own. Prevents buying duplicates instead 
 
 ** React GUI
 
-
+@ DELETE/UPDATE FUNCTIONS PLEASE

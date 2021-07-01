@@ -1,11 +1,13 @@
 A postgres data base of all the books I own. Prevents buying duplicates instead of keeping pictures of my entire library.
 
-** perm database
+### perm database
 
-** delete/update functions
+### delete/update functions
 
-** frontend
+### frontend
+ 
+### React GUI
 
-** React GUI
+##
+keep mobile table of current database
 
-@ DELETE/UPDATE FUNCTIONS PLEASE
